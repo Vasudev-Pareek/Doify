@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexcent Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  {% comment %} <script src="{% static "Entry_Dashboard/Style.css" %}"></script> {% endcomment %}
+  {% comment %} <link rel="" type="" href="{% static "Entry_Dashboard/Style.css" %}"> {% endcomment %}
+  {% comment %} {% load static %} {% endcomment %}
+  <link rel="stylesheet" type="text/css" href="{% static 'Entry_Dashboard/css/Style.css' %}">
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-10 py-6 bg-white shadow-sm">
+    <!-- Logo -->
+    <div class="text-xl font-bold text-green-600 flex items-center space-x-2">
+      <img src="https://via.placeholder.com/30" alt="logo" class="h-8 w-8"/>
+      <span>Nexcent</span>
+    </div>
+    <!-- Navigation Links -->
+    <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <li><a href="#" class="hover:text-green-600">Home</a></li>
+      <li><a href="#" class="hover:text-green-600">Features</a></li>
+      <li><a href="#" class="hover:text-green-600">Community</a></li>
+      <li><a href="#" class="hover:text-green-600">Blog</a></li>
+      <li><a href="#" class="hover:text-green-600">Pricing</a></li>
+    </ul>
+    <!-- Register Button -->
+    <a href="#" class="bg-green-500 text-white px-5 py-2 rounded-md hover:bg-green-600 transition">
+      Register Now →
+    </a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse md:flex-row items-center justify-between px-10 py-20 max-w-7xl mx-auto">
+    <!-- Left Content -->
+    <div class="md:w-1/2 mb-10 md:mb-0">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+        Lessons and insights <br>
+        <span class="text-green-500">from 8 years</span>
+      </h1>
+      <p class="text-gray-600 mb-6">
+        Where to grow your business as a photographer: site or social media?
+      </p>
+      <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-md font-medium hover:bg-green-600 transition">
+        Register
+      </a>
+    </div>
+    <!-- Right Image -->
+    <div class="md:w-1/2">
+      <img src="https://via.placeholder.com/450x300" alt="illustration" class="w-full max-w-md mx-auto"/>
+    </div>
+  </section>
+
+  <!-- Dots/Slider Indicators -->
+  <div class="flex justify-center items-center pb-8">
+    <div class="h-2 w-2 rounded-full bg-green-400 mx-1"></div>
+    <div class="h-2 w-2 rounded-full bg-gray-300 mx-1"></div>
+    <div class="h-2 w-2 rounded-full bg-gray-300 mx-1"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexcent Clone</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'Entry_Dashboard/css/Style.css' %}">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="{% static "Entry_Dashboard/Images/Doify-logo.png" %}" alt="logo" />
+      Doify
+    </div>
+    <ul class="nav-links">
+      {% comment %} <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Community</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Pricing</a></li> {% endcomment %}
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Contact us</a></li>
+      {% comment %} <li><a href="#">Blog</a></li>
+      <li><a href="#">Pricing</a></li> {% endcomment %}
+    </ul>
+    <a href="#" class="btn-register">Register Now →</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Our Central Hub: <span>Doify</span></h1>
+      {% comment %} <h1><span>Welcome to Doify  </span>— Your Intelligent Gateway to Seamless Digital Operations.</h1> {% endcomment %}
+      <p>Empowering teams to work smarter, manage better, and achieve more. Your Intelligent Gateway to Seamless Digital Operations — all in one unified platform.</p>
+      <div class="buttons">
+        <a href="#" class="btn-register">Register</a>
+        <a href="#" class="btn-register">Explore More</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- <img src="https://via.placeholder.com/450x300" alt="illustration" /> -->
+      <img src="{% static "Entry_Dashboard/Images/Group 237.png" %}" alt="illustration" />
+    </div>
+  </section>
+
+  <!-- Slider Dots -->
+  {% comment %} <div class="slider-dots">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div> {% endcomment %}
+
+</body>
+</html>
