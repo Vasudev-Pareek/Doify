@@ -40,8 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # My Installed Apps
-    'Personal_Notes',
-    'Entry_Dashboard',
+    'Personal_Notes'
 ]
 
 MIDDLEWARE = [
