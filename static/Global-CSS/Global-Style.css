@@ -1,0 +1,79 @@
+:root {
+  --Primary-Color:#28CB8B;
+  --Secondary-Color:#263238;
+  --Info-Color:#2194f3;
+
+  --Neutral-Black:#263238;
+  --Neutral-D-Grey:#4D4D4D;
+  --Neutral-Grey:#717171;
+  --Neutral-L-Grey:#89939E;
+  --Neutral-Grey-Blue:#89939E;
+  --Neutral-Silver:#F5F7FA;
+  --Neutral-White:#FFFFFF;
+
+  --Color-Shade-One:#43A046;
+  --Color-Shade-Two:#388E3B;
+  --Color-Shade-Three:#237D31;
+  --Color-Shade-Four:#1B5E1F;
+  --Color-Shade-Five:#103E13;
+
+  --Color-Tint-One:#66BB69;
+  --Color-Tint-Two:#81C784;
+  --Color-Tint-Three:#A5D6A7;
+  --Color-Tint-Four:#C8E6C9;
+  --Color-Tint-Five:#E8F5E9;
+
+  --Action-Success-Five:#2E7D31;
+  --Action-Error-Five:#E53835;
+  --Action-Warning-Five:#FBC02D;
+
+  /* Typography */
+  --Typo-Headlines-Headlines:
+  
+}
+
+:root {
+  --Typo-Heading1-Font-wWight: 600;       
+  --Typo-Heading1-Font-Size: 64px;        
+  --Typo-Heading1-Line-Height: 76px;  
+
+  --Typo-Heading2-Font-Weight: 600;       
+  --Typo-Heading2-Font-Size: 36px;        
+  --Typo-Heading2-line-Height: 44px;     
+
+  --Typo-Heading3-Font-weight: 600;       
+  --Typo-Heading3-Font-size: 28px;        
+  --Typo-Heading3-line-height: 36px;     
+
+  --Typo-Heading4-Font-weight: 600;       
+  --Typo-Heading4-Font-size: 20px;        
+  --Typo-Heading4-line-height: 28px;     
+
+
+  /* Body */
+  --Typo-Body1-font-: 28px;     
+
+  /* Please check the git status which repo on you are no working */
+}
+Regular
+Body 1
+Regular,
+Body 2
+Regular,
+Body 3
+Regular,
+Body 4
+Regula rr
+18/28
+16/24
+14/20
+12/16
+Medium
+Body 1
+Regular, 18/28
+Body 2
+Regular, 16/24
+Body 3
+Regular, 14/20
+Body 4
+Regular, 12/16
