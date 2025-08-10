@@ -7,30 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nexcent Clone</title>
   <link rel="stylesheet" type="text/css" href="{% static 'Entry_Dashboard/css/Style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'Global-CSS/Global-Style.css' %}">
+
 
 </head>
 <body>
 
   <!-- Navbar -->
   <nav>
-    <div class="logo">
-      <img src="{% static "Entry_Dashboard/Images/Doify-logo.png" %}" alt="logo" />
-      Doify
+    <div class="nav-left">
+        <div class="logo">
+            <img src="{% static 'Entry_Dashboard/Images/Doify-logo.png' %}" alt="logo" />
+            Doify
+        </div>
     </div>
-    <ul class="nav-links">
-      {% comment %} <li><a href="#">Home</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Community</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Pricing</a></li> {% endcomment %}
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About us</a></li>
-      <li><a href="#">Contact us</a></li>
-      {% comment %} <li><a href="#">Blog</a></li>
-      <li><a href="#">Pricing</a></li> {% endcomment %}
-    </ul>
-    <a href="#" class="btn-register">Register Now →</a>
-  </nav>
+
+    <div class="nav-center">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-right">
+        <a href="#" class="button secondary normal">Log In</a>
+        <a href="#" class="button primary normal">Register Now →</a>
+    </div>
+</nav>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -39,22 +43,302 @@
       {% comment %} <h1><span>Welcome to Doify  </span>— Your Intelligent Gateway to Seamless Digital Operations.</h1> {% endcomment %}
       <p>Empowering teams to work smarter, manage better, and achieve more. Your Intelligent Gateway to Seamless Digital Operations — all in one unified platform.</p>
       <div class="buttons">
-        <a href="#" class="btn-register">Register</a>
-        <a href="#" class="btn-register">Explore More</a>
+        <a href="#" class="button primary normal">Register</a>
+        <!-- <a href="#" class="btn-register">Explore More</a> -->
+        <a href="#" class="button secondary normal">Explore More 
+          <span class="icon-right">→</span>
+        </a>
+
       </div>
     </div>
     <div class="hero-image">
       <!-- <img src="https://via.placeholder.com/450x300" alt="illustration" /> -->
-      <img src="{% static "Entry_Dashboard/Images/Group 237.png" %}" alt="illustration" />
+      <img src="{% static 'Entry_Dashboard/Images/Group 237.png' %}" alt="illustration" />
     </div>
   </section>
 
-  <!-- Slider Dots -->
-  {% comment %} <div class="slider-dots">
-    <div class="dot active"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-  </div> {% endcomment %}
+  <!-- Module-Card-Section -->
+  <section id="Module-Card-Section">
+    <div id="Module-Card-Text" class="comfortable">
+      <h3 class="comfortable">Manage your entire community in a single system</h3>
+      <p>Who is Doify suitable for?</p>
+    </div>
+    <div id="Module-Card-box">
+      <!-- Card - 1 -->
+      <div class="Custom-card Custom-shadow-2">
+        <div class="customer-card-header">
+          <div class="Customer-card-title">Personal Notes</div>
+          <div class="custom-card-chip">
+            <img src="{% static 'Images/notes.png' %}" alt="illustration"  class="Module-Icon"/>
+          </div>
+        </div>
+        <div class="custom-card-body">
+          <p class="line short"></p>
+          <p class="line medium"></p>
+          <p class="line long"></p>
+          <p class="line medium"></p>
+        </div>
+      </div>
+
+      <!-- Card - 2 -->
+      <div class="Custom-card Custom-shadow-2">
+        <div class="customer-card-header">
+          <div class="Customer-card-title">Personal Notes</div>
+          <div class="custom-card-chip">
+            <img src="{% static 'Images/notes.png' %}" alt="illustration"  class="Module-Icon"/>
+          </div>
+        </div>
+        <div class="custom-card-body">
+          <p class="line short"></p>
+          <p class="line medium"></p>
+          <p class="line long"></p>
+          <p class="line medium"></p>
+        </div>
+      </div>
+
+      <!-- Card - 3 -->
+      <div class="Custom-card Custom-shadow-2">
+        <div class="customer-card-header">
+          <div class="Customer-card-title">Personal Notes</div>
+          <div class="custom-card-chip">
+            <img src="{% static 'Images/notes.png' %}" alt="illustration"  class="Module-Icon"/>
+          </div>
+        </div>
+        <div class="custom-card-body">
+          <p class="line short"></p>
+          <p class="line medium"></p>
+          <p class="line long"></p>
+          <p class="line medium"></p>
+        </div>
+      </div>
+
+      <!-- Card - 4 -->      
+      <div class="Custom-card Custom-shadow-2">
+        <div class="customer-card-header">
+          <div class="Customer-card-title">Personal Notes</div>
+          <div class="custom-card-chip">
+            <img src="{% static 'Images/notes.png' %}" alt="illustration"  class="Module-Icon"/>
+          </div>
+        </div>
+        <div class="custom-card-body">
+          <p class="line short"></p>
+          <p class="line medium"></p>
+          <p class="line long"></p>
+          <p class="line medium"></p>
+        </div>
+      </div>
+
+      <!-- Card - 5 -->      
+      <div class="Custom-card Custom-shadow-2">
+        <div class="customer-card-header">
+          <div class="Customer-card-title">Personal Notes</div>
+          <div class="custom-card-chip">
+            <img src="{% static 'Images/notes.png' %}" alt="illustration"  class="Module-Icon"/>
+          </div>
+        </div>
+        <div class="custom-card-body">
+          <p class="line short"></p>
+          <p class="line medium"></p>
+          <p class="line long"></p>
+          <p class="line medium"></p>
+        </div>
+      </div>
+
+      <!-- Card - 6 -->      
+      <div class="Custom-card Custom-shadow-2">
+        <div class="customer-card-header">
+          <div class="Customer-card-title">Personal Notes</div>
+          <div class="custom-card-chip">
+            <img src="{% static 'Images/notes.png' %}" alt="illustration"  class="Module-Icon"/>
+          </div>
+        </div>
+        <div class="custom-card-body">
+          <p class="line short"></p>
+          <p class="line medium"></p>
+          <p class="line long"></p>
+          <p class="line medium"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-unseen-third -->
+  <section class="section-unseen-third">
+    <div class="hero-image">
+      <img src="{% static 'Images/rafiki-regenerated-bg.png' %}" alt="Illustration">
+    </div>
+    <div class="section-content">
+      <h3 class="comfortable">The unseen of spending three years at Pixelgrade</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. 
+        Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. 
+        Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. 
+        Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
+      </p>
+      <!-- <button>Learn More</button> -->
+      <a href="#" class="button primary normal">Explore More 
+        <span class="icon-right">→</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- stats-section -->
+  <section class="stats-section">
+    <div class="stats-text">
+      <h3 class="comfortable">
+        Helping a local <br />
+        <span class="highlight">business reinvent itself</span>
+      </h3>
+      <p>We reached here with our hard work and dedication</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <i class="icon">&#128101;</i>
+        <!-- <div class="hero-image"> -->
+          <!-- <img src="{% static 'Images/Icon - 4.png' %}" alt="Illustration"> -->
+        <!-- </div> -->
+        <div>
+          <h3>2,245,341</h3>
+          <span>Members</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <i class="icon">&#128692;</i>
+        <div>
+          <h3>46,328</h3>
+          <span>Clubs</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <i class="icon">&#127881;</i>
+        <div>
+          <h3>828,867</h3>
+          <span>Event Bookings</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <i class="icon">&#128179;</i>
+        <img src="" alt="">
+        <div>
+          <h3>1,926,436</h3>
+          <span>Payments</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- section-unseen-third -->
+  <section class="section-unseen-third">
+    <div class="hero-image">
+      <img src="{% static 'Images/pana.png' %}" alt="Illustration">
+    </div>
+    <div class="section-content">
+      <h3 class="comfortable">The unseen of spending three years at Pixelgrade</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. 
+        Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. 
+        Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. 
+        Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
+      </p>
+      <!-- <button>Learn More</button> -->
+      <a href="#" class="button primary normal">Explore More 
+        <span class="icon-right">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonial-section">
+    <div class="testimonial-left">
+      <h5 class="testimonial-label">TESTIMONIALS</h5>
+      <h2 class="">What People Say About Us.</h2>
+      <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <div class="testimonial-right">
+      <div class="testimonial-card bigger">
+        <img src="{% static 'Entry_Dashboard/Images/Avatar-Image.png' %}" alt="User" class="testimonial-avatar" />
+        <p class="testimonial-text">
+          “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+        </p>
+        <h4 class="testimonial-name">Mike taylor</h4>
+        <span class="testimonial-role">Lahore, Pakistan</span>
+      </div>
+      <div class="testimonial-card small testimonial-smaller">
+        <div class="testimonial-small-text">
+          <h4 class="testimonial-name">Chris Thomas</h4>
+          <span class="testimonial-role">CEO of Red Button</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="subscribe">
+    <div class="subscribe-box-container">
+      <img src="{% static 'Entry_Dashboard/Images/Messenger.png' %}" alt="User" class="subscribe-avatar" />
+      <div class="subscribe-box">
+
+        <img src="{% static 'Entry_Dashboard/Images/Mask-Circle-1.png' %}" class="circle circle-left" alt="">
+        <img src="{% static 'Entry_Dashboard/Images/Mask-circle-2.png' %}" class="circle circle-right" alt="">
+
+        <h3 class="comfortable">Subscribe to get information, latest news and other interesting offers about Doify</h3>
+        <form>
+          <input type="email" placeholder="Your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Doify.</h3>
+        <p>Book your trip in minute, get full Control for much longer...</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Mobile</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">Help/FAQ</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Affiliates</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>More</h4>
+          <ul>
+            <li><a href="#">Airline</a></li>
+            <li><a href="#">Low Fare Tips</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <img src="appstore.png" alt="App Store" />
+        <img src="googleplay.png" alt="Google Play" />
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; All rights reserved@doify.co</p>
+  </footer>
+
 
 </body>
 </html>
