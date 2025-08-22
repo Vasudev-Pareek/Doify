@@ -236,13 +236,13 @@
 .dot {
   height: 8px;
   width: 8px;
-  background-color: #d0d0d0;
+  background-color: var(--dot-bydefault-bg-color);
   border-radius: 50%;
   display: inline-block;
 }
 
 .dot.active {
-  background-color: #39425d;
+  background-color: var(--dot-bg-color);
 }
 
 .testimonial-right {
@@ -251,7 +251,7 @@
 }
 
 .testimonial-card {
-  background: #fff;
+  background: var(--Neutral-White);
   box-shadow: 0px 30px 50px rgba(0,0,0,0.05);
   border-radius: 10px;
   /* padding: 30px; */
@@ -266,7 +266,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid var(--Neutral-White);
 }
 
 .testimonial-text {
@@ -341,7 +341,7 @@
 }
 
 .subscribe-box {
-  background: #f8f3fe;
+  background: var(--short-centerd-bg-color);
   padding: 80px 80px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -387,14 +387,14 @@
   width: 250px;
 }
 
-.subscribe-box button {
+/* .subscribe-box button {
   background: #ff7a59;
-  color: white;
+  color: var(--Neutral-White);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 .subscribe-avatar{
   position: absolute;
@@ -402,7 +402,7 @@
   right: -10px;
   width: 45px;
   height: 45px;
-  border: 1px solid #f8f3fe;
+  border: 1px solid var(--avatar-border-color);
   z-index: 99;
   border-radius: 50%;
 }
@@ -412,62 +412,120 @@
 }
 
 
-/* Footer ------------------ */
-.footer {
-  background: #fff;
-  /* padding: 50px 20px; */
-  font-size: 0.9rem;
-  padding: var(--commmon-section-padding);
 
-}
-
-.footer-top {
+/* Login - Registration Page */
+.registration-register {
+  background: var(--registration-btn-grey);
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.footer-brand {
-  max-width: 250px;
-}
-
-.footer-links {
+.registration-container {
   display: flex;
-  gap: 40px;
+  width: 900px;
+  background: var(--Neutral-White);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.footer-links h4 {
-  margin-bottom: 10px;
+/* Left side image */
+.registration-container .left {
+  flex: 1;
+  /* background: url("{% static '../Images/Registration_Page.png' %}") no-repeat center center/cover; */
+  background: url("../Images/Registration_Page.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px;
+  color: #fff;
 }
 
-.footer-links ul {
-  list-style: none;
-  padding: 0;
+.registration-container .left h2 {
+  font-size: 22px;
+  font-weight: bold;
 }
-
-.footer-links ul li {
-  margin-bottom: 5px;
-}
-
-.footer-links ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.footer-social img {
-  height: 35px;
-  margin: 5px 0;
-}
-
-.footer-bottom {
-  text-align: center;
-  color: #888;
-  margin-top: 20px;
-}
-
-
-
-/* .subscribe-box{
-  background-color: ;
+/* .left p {
+  font-size: 14px;
 } */
+
+/* Right side form */
+.registration-container .right {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.registration-container .right h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.registration-container .btn-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.registration-container .btn-toggle a.CustomButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-weight: bold;
+  background: #e0e0e0;
+}
+
+.registration-container .btn-toggle a.CustomButton.active {
+  background: #28c7c7;
+  color: white;
+}
+
+.registration-container .form-group {
+  margin-bottom: 15px;
+}
+
+.registration-container .form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.registration-container .form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #28c7c7;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+}
+
+.registration-container .form-group input:focus {
+  border-color: #1aa3a3;
+}
+
+.registration-container .submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: var(--Primary-Color);
+  /* background: #28c7c7.; */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.registration-container .submit-btn:hover {
+  /* background: #1aa3a3; */
+  background: var(--Primary-Color);
+
+}

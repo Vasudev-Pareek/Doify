@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexcent Clone</title>
+  <title>Doify Portal</title>
   <link rel="stylesheet" type="text/css" href="{% static 'Entry_Dashboard/css/Style.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'Global-CSS/Global-Style.css' %}">
 
@@ -31,8 +31,8 @@
     </div>
 
     <div class="nav-right">
-        <a href="#" class="button secondary normal">Log In</a>
-        <a href="#" class="button primary normal">Register Now →</a>
+        <a href="{% url 'User_Login' %}" class="button secondary normal">Log In</a>
+        <a href="{% url 'User_Registration' %}"  class="button primary normal">Register Now →</a>
     </div>
 </nav>
 
@@ -43,9 +43,9 @@
       {% comment %} <h1><span>Welcome to Doify  </span>— Your Intelligent Gateway to Seamless Digital Operations.</h1> {% endcomment %}
       <p>Empowering teams to work smarter, manage better, and achieve more. Your Intelligent Gateway to Seamless Digital Operations — all in one unified platform.</p>
       <div class="buttons">
-        <a href="#" class="button primary normal">Register</a>
+        <a href="{% url 'User_Registration' %}" class="button primary normal">Register</a>
         <!-- <a href="#" class="btn-register">Explore More</a> -->
-        <a href="#" class="button secondary normal">Explore More 
+        <a href="#%}"  class="button secondary normal">Explore More 
           <span class="icon-right">→</span>
         </a>
 
@@ -292,7 +292,7 @@
         <h3 class="comfortable">Subscribe to get information, latest news and other interesting offers about Doify</h3>
         <form>
           <input type="email" placeholder="Your email" required />
-          <button type="submit">Subscribe</button>
+          <button type="submit" class="button primary normal">Subscribe</button>
         </form>
       </div>
     </div>

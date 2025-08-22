@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 html {
@@ -51,6 +52,20 @@ body {
     --btn-primary-bg-disabled: #e0e0e0;
     --btn-primary-text: #ffffff;
     --btn-primary-text-disabled: #a0a0a0;
+
+    --footer-light-color:#888;
+    --anchor-text-color:#333;
+    --avatar-border-color:#f8f3fe;
+
+    --short-centerd-bg-color:#f8f3fe;
+    --dot-bydefault-bg-color:#d0d0d0;
+    --dot-bg-color:#39425d;
+
+
+    /* Login-Registration Page color */
+    --registration-btn-color:#28c7c7;
+    --registration-btn-hover:#1aa3a3;
+    --registration-btn-grey:#e0e0e0;
 
     /* Button Border */
     --btn-border-radius: 6px;
@@ -308,6 +323,7 @@ nav {
 
 a{
   text-decoration: none;
+  color: var(--anchor-text-color);
 }
 
 @media (min-width: 768px) {
@@ -333,3 +349,59 @@ a{
 .Custom-shadow-6 { box-shadow: var(--shadow-6px-30); }
 .Custom-shadow-8 { box-shadow: var(--shadow-8px-40); }
 .Custom-shadow-16 { box-shadow: var(--shadow-16px-30); }
+
+
+
+/* Footer ------------------ */
+.footer {
+  background: #fff;
+  /* padding: 50px 20px; */
+  font-size: 0.9rem;
+  padding: var(--commmon-section-padding);
+
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-brand {
+  max-width: 250px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 5px;
+}
+
+/* .footer-links ul li a {
+  text-decoration: none;
+  color: #333;
+} */
+
+.footer-social img {
+  height: 35px;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: var(--footer-light-color);
+  margin-top: 20px;
+}
